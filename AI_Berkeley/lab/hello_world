@@ -1,0 +1,14 @@
+fruitPrices = {'apples': 2.0, 'oranges': 1.5, 'pear': 1.27}
+
+
+def buy(fruit, num):
+    if fruit not in fruitPrices:
+        print "fruit not for sale %s" % fruit
+    else:
+        cost = fruitPrices[fruit] * num
+        print "that will be %f$" % cost
+
+
+if __name__ == '__main__':
+    buy('apples', 16)
+    buy('shit', 2)
